@@ -12,18 +12,32 @@
     <h1>Coding Quiz Challenge!</h1>
 
          <h2>Try to answer as many questions correctly in the time provided. Keep in mind for each wrong answer ten seconds will be deducted.</h2>
+         <button type="button">Start Quiz</button>
 
                 <div id = "start"> Start Quiz </div>
                 <div id = "quiz" style = "display: none;">
                 <div id ="questions"> <p> Question</p></div>
                 <div id ="timer">
                 <div id ="timeGuage"></div>
-            
+                
+             <!-- ids for choices-->  
+            </div>
+            <div id ="choices">
+                <div class ="choice" id="1" onclick="checkAnswer('1')">1</div>
+                <div class ="choice" id="2" onclick="checkAnswer('2')">2</div>
+                <div class ="choice" id="3" onclick="checkAnswer('3')">3</div>
+            </div> 
+        
+        <!--ids for subtracting time-->
+        <div id="timerDisplay"></div>
+        <button id="incorrect">Simulate Incorrect Answer</button>
+                
+                
                 <!--top right corner-->
             <h3>Time</h3>
            
             <!--top left corner-->
-            <button type="button">Start Quiz</button>
+            <button type="button">highscores</button>
 
             
 
