@@ -112,5 +112,18 @@ function compare(event) {
 
     }
 
-    
+    // determines which question the user is on
+
+    questionIndex++;
+
+    if (questionIndex >= questions.length) {
+        // All done will append last page with user stats
+        allDone();
+        createDiv.textContent = "End of quiz!" + " " + "You got  " + score + "/" + questions.length + " Correct!";
+    } else {
+        render(questionIndex);
+    }
+    questionsDiv.appendChild(createDiv);
+
 }
+
