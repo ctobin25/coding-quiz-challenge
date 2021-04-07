@@ -43,7 +43,21 @@ var choices = [
 ]
 
 
-var index = 0
+var score = 0;
+var questionIndex = 0;
+
+var currentTime = document.querySelector("#currentTime");
+var timer = document.querySelector("#startTime");
+var questionsDiv = document.querySelector("#questionsDiv");
+var wrapper = document.querySelector("#wrapper");
+
+
+
+
+
+
+
+
 
 function showQuestion(){
     console.log('choice',choices[index].question)
