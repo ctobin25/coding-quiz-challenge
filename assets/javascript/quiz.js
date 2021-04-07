@@ -23,7 +23,7 @@ timer()
 
 //dispaly quiz questions
 
-//create 10 questions
+//create 20 questions
 var choices = [
     {
         question: '1Commonly used data types DO NOT include:',
@@ -61,7 +61,7 @@ function showQuestion(){
 
 
 
-    //if index === 10; this mean quiz ended 
+    //if index === 20; this mean quiz ended 
 
 }
 
