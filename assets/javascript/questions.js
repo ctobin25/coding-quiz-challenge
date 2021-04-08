@@ -138,3 +138,32 @@ if (secondsLeft >= 0) {
 
     questionsDiv.appendChild(createP2);
 }
+// test is done
+
+function allDone() {
+    questionsDiv.innerHTML = "";
+    currentTime.innerHTML = "";
+
+    
+    var createH1 = document.createElement("h1");
+    createH1.setAttribute("id", "createH1");
+    createH1.textContent = "All Done!"
+
+    questionsDiv.appendChild(createH1);
+
+ 
+    var createP = document.createElement("p");
+    createP.setAttribute("id", "createP");
+
+    questionsDiv.appendChild(createP);
+
+}
+
+//label to keep track of hs
+
+var createLabel = document.createElement("label");
+createLabel.setAttribute("id", "createLabel");
+createLabel.textContent = "Enter your initials: ";
+
+questionsDiv.appendChild(createLabel);
+
